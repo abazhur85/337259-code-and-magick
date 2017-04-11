@@ -166,6 +166,7 @@
       </div>
       <p class="setup-similar-label">Петр Петров</p>
     </div>
+<<<<<<< HEAD
   </template>
 
   <script>
@@ -188,6 +189,33 @@
     function getWizardY(height) {
       return height / 3 * 2;
     }
+=======
+    <p class="setup-similar-label">Петр Петров</p>
+  </div>
+</template>
+<script>
+  var fireballSize = '22px';
+  var wizardSpeed = 3;
+  var wizardWidth = 70;
+
+  function getFireballSpeed(left) {
+    return left ? 5 : 2;
+}
+
+  function getWizardHeight(wizardWidth) {
+    return 1.337 * wizardWidth;
+}
+
+  function getWizardX(width) {
+   return width / 2;
+}
+
+  function getWizardY(height) {
+   return height / 3 * 2;
+}
+</script>
+<script src="/js/game.js"></script>
+>>>>>>> htmlacademy-javascript/master
 
   </script>
   <script src="js/setup.js"></script>
