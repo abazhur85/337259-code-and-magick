@@ -47,11 +47,16 @@ setupClose.addEventListener('keydown', function(evt) {
     }
 });
 
-//Validaciya imeno polzovatelya
+//Validaciya imeni polzovatelya
 var username = setup.querySelector('.setup-user-name');
 username.required = true;
 username.maxlength = 50;
 
+username.addEventListener('focus', function(evt) {
+  return document.removeEventListener('keydown', onEscPress);
+});
+
+//setup similar
 document.querySelector('.setup-similar').classList.remove('hidden');
 
 var similarListElement = userDialog.querySelector('.setup-similar-list');
